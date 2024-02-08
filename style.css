@@ -1,5 +1,9 @@
 /* viide elemendile st muudame kõiki selliseid elemente */
 body {
+    animation-name: example2;
+  animation-duration: 1s;
+     animation-iteration-count: infinite;
+    background-color: #78b9a3;
     display: flex;
     padding: 1em;
     flex-direction: column;
@@ -7,6 +11,10 @@ body {
     align-items: center;
 }
 /* #-ga viitame elemendile, millel on selline id */
+@keyframes example2 {
+  from {background-color: #78b9a3;}
+  to {background-color: #cc3e3e;}
+}
 #photo {
     max-width: 25em;
     max-height: 30em;
@@ -37,7 +45,7 @@ border-radius: 50% 0 50% 0;
 
 h1{color: #11d7c6;
     text-align: right;
-    background-color: #ffffff;
+
     letter-spacing: 5px; }
 /* .-ga viitame elemenditele, millel on selline class */
 .container {
